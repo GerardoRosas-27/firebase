@@ -1,0 +1,89 @@
+
+   
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>
+        Sistema Evaluaci&oacute;n
+    </title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+     
+       
+       <div id="formularioempresa" data-size="max" class="col-12" data-eliminar="eliminar">
+    <div class="card sombra">
+        <div class="card-header card-header-primary">
+            
+
+            <h4 class="card-title">Empresa</h4>
+            <p class="card-category">crea un nuevo registro de una empresa</p>
+        </div>
+        <div class="empresa card-body">
+            <div class="form-group col-12">
+                <label>Nombre de la empresa</label>
+                <input type="text" class="borrar form-control" id="textNombre">
+            </div>
+            <div class="form-group col-12">
+                <label>Descripción de la empresa</label>
+                <input type="text" class="borrar form-control" id="textDescripcion">
+            </div>
+            <div class="form-group col-12">
+                <label>Teléfono</label>
+                <input type="text" class="borrar form-control" id="textTelefono">
+            </div>
+            <div class="form-group col-12">
+                <label>Dirección</label>
+                <input type="text" class="borrar form-control" id="textDireccion">
+            </div>
+        </div>
+        <div id="contAccion" class="card-footer">
+            <button onClick="cancelar()" type="button" class="btn btn-warning ">Cancelar</button>
+            <button onClick="guardar()" type="button" class="btn btn-primary">Guardar</button>
+        </div>
+    </div>
+</div>
+       
+       
+       
+
+       
+        <div class="tablaempresa card-body table-responsive">
+            <table class="table table-hover">
+               
+                <thead class="text-warning">
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Dirección</th>
+                    <th>Teléfono</th>
+                    <th>Opciones</th>
+                </thead>
+                <tbody id="datosEmpresa">
+                    
+                    
+                </tbody>
+            
+            </table>
+        </div>
+   
+
+
+  <!-- Initialize Firebase -->
+   <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+   	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script type="text/javascript" src="./conexion.js"></script>
+   <script type="text/javascript" src="./main.js"></script>
+
+</body>
+</html>
+ 
+   
+   
+   
+   
+   
